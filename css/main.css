@@ -187,31 +187,33 @@ button {
     padding-bottom: 25px;
 }
 
-.page--participants .module--article p {
-    float: left;
-    font: 14px Verdana, Arial, Helvetica, sans-serif;
-    color: white;
-}
+/*------------------- Module: Links */
 
-.page--participants .module--article a {
-    float: right;
-    color: #decacb;
-    font: 12px Verdana, Arial, Helvetica, sans-serif;
+.module--links h6 {
+    color: white;
+    font: 14px Verdana, Arial, Helvetica, sans-serif;
     margin-bottom: 15px;
 }
 
-/*------------------- Module: Links */
+.module--links h6 a {
+    float: right;
+    color: #decacb;
+    font: 12px Verdana, Arial, Helvetica, sans-serif;
+}
 
-.module--links {
-    width: 635px;
+.ololo::after {
+    content: '';
+    display: block;
     clear: both;
 }
-.module--links a {
-    width: 105px;
-    height: 105px;
+
+.ololo img {
     border: 10px solid #3c312f;
-    float: left!important;
-    margin: 10px;
+}
+
+.ololo a {
+    float: left;
+    margin: 0 10px 10px 0;
 }
 
 /* ---------------------------------------- Footer */
