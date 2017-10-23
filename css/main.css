@@ -39,14 +39,12 @@ h2 {
 
 h3 {
     color: #95d0d9;
-    text-align: right;
     margin-right: 25px;
-    font: bold 15px Verdana, Arial, Helvetica, sans-serif;
+    font: bold 17px Arial, Helvetica, sans-serif;
     margin-bottom: 16px;
 }
 
-form .field {
-    float: right;
+.field {
     margin-bottom: 10px;
     font-size: 13px;
 }
@@ -67,7 +65,6 @@ button {
     color: white;
     text-shadow: -1px -1px #1e545c;
     font-size: 15px;
-    margin: 20px 0 45px 5px;
 }
 
 /*----------------------------------------- Header */
@@ -103,20 +100,25 @@ button {
 
 /* ---------------------------------------- Content */
 
-/*---------------- Column--left */
-.column--left {
+.content::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.column-left {
     width: 280px;
     float: left;
 }
 
-/*--------------- Column--right */
-.column--right {
+.column-right {
     width: 650px;
     padding: 0 20px;
     float: right;
 }
 
 /*--------------- Module: Label */
+
 .module--label {
     width: 402px;
     background-color: #594546;
@@ -131,15 +133,16 @@ button {
 }
 
 /*--------------- Module: Address */
+
 .module--address {
     background-color: #3c322f;
-    padding: 19px 0 0 10px;
+    padding: 19px 0 45px 10px;
     line-height: 170%;
     border-radius: 7px;
 }
 
 .module--address p {
-    padding-bottom: 25px;
+    margin-bottom: 25px;
     color: #a28c8b;
 }
 
@@ -149,12 +152,21 @@ button {
     color: white;
 }
 
+.module--adress button {
+    margin-top: 20px;
+}
+
 /*----------------- Module: Input */
+
 .module--input {
-    width: 610px;
-    float: right;
-    background: transparent;
+    text-align: right;
     margin-bottom: 23px;
+}
+
+.module--input::after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
 .module--input img {
@@ -162,25 +174,17 @@ button {
 }
 
 .module--input button {
-    float: right;
+    margin-top: 20px;
 }
 
 /*------------------- Module: Article */
+
 .module--article {
-    width: 610px;
-    float: right;
     line-height: 170%;
-    background: transparent;
 }
 
 .page--about-us .module--article p {
     padding-bottom: 25px;
-}
-
-.content::after {
-    content: '';
-    display: block;
-    clear: both;
 }
 
 .page--participants .module--article p {
@@ -197,6 +201,7 @@ button {
 }
 
 /*------------------- Module: Links */
+
 .module--links {
     width: 635px;
     clear: both;
@@ -209,7 +214,7 @@ button {
     margin: 10px;
 }
 
-    /* ---------------------------------------- Footer */
+/* ---------------------------------------- Footer */
 
 .footer {
     position: absolute;
@@ -225,4 +230,3 @@ button {
     vertical-align: 40px;
     margin-left: 5px;
 }
-
