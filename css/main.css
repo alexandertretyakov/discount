@@ -1,4 +1,6 @@
-﻿* {
+﻿/* ------------------------------------------------------ Basic styles */
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -10,7 +12,7 @@ body {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font: 12px Arial, Helvetica, sans-serif;
     background: #473B38;
 }
 
@@ -18,16 +20,173 @@ body {
     width: 950px;
     margin: 0 auto;
     min-height: 100%;
-    padding-bottom: 120px;
+    padding-bottom: 150px;
     position: relative;
+    color: #cac4c1;
+}
+
+span {
+    font-size: 28px;
+}
+
+h1 {
+    color: #decacb;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font: bold 18px Verdana, Arial, Helvetica, sans-serif;
+    padding-bottom: 25px;
+    color: #95d0d9;
+}
+
+h3 {
+    color: #95d0d9;
+    float: right;
+    margin-right: 25px;
+    font: bold 15px Verdana, Arial, Helvetica, sans-serif;
+    padding-bottom: 16px;
+}
+
+.field {
+    float: right;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+input {
+    width: 170px;
+    height: 22px;
+    border: 1px solid #95d0d9;
+    margin-left: 15px;
+}
+
+button {
+    width: 250px;
+    height: 35px;
+    border-radius: 6px;
+    border: 1px outset #3aacbd;
+    background: linear-gradient(180deg, #55c1d1, #148ea0);
+    color: white;
+    text-shadow: -1px -1px #1e545c;
+    font-size: 15px;
+    margin: 20px 0 45px 5px;
+}
+
+/*----------------------------------------- Header */
+
+.header {
+    width: 950px;
+    border-bottom: 1px solid #6A5455;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+.header img {
+    float: left;
+}
+
+.nav {
+    width: 415px;
+    float: right;
+    margin-top: 55px;
+}
+
+.nav a {
+    color: #decac5;
+    margin-left: 20px;
+    text-decoration: none;
+    padding: 2.5px 0;
+}
+
+.nav a:hover {
+    border-top: 8px solid #594546;
+}
+
+.header::after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
 /* ---------------------------------------- Content */
 
-/*
-    Для голубых заголовков
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-*/
+/*---------------- Column--left */
+.column--left {
+    width: 280px;
+    float: left;
+}
+
+/*--------------- Column--right */
+.column--right {
+    width: 650px;
+    padding: 0 20px;
+    float: right;
+}
+
+/*--------------- Module: Label */
+.module--label {
+    width: 402px;
+    background-color: #594546;
+    border: 1px solid #7f5e60;
+    padding: 20px 0 24px 105px;
+    font-size: 14px;
+    margin: 0 0 28px -120px;
+}
+
+/*--------------- Module: Address */
+.module--address {
+    background-color: #3c322f;
+    padding: 19px 0 0 10px;
+    line-height: 170%;
+    border-radius: 7px;
+}
+
+.module--address p {
+    padding-bottom: 25px;
+    color: #a28c8b;
+}
+
+.module--address p:nth-child(2) {
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}
+
+/*----------------- Module: Input */
+.module--input {
+    width: 610px;
+    float: right;
+    background: transparent;
+    margin-bottom: 23px;
+}
+
+.module--input img {
+    float: left;
+}
+
+.module--input button {
+    float: right;
+}
+
+/*------------------- Module: Article */
+.module--article {
+    width: 610px;
+    float: right;
+    line-height: 170%;
+    background: transparent;
+}
+
+.module--article p {
+    padding-bottom: 25px;
+}
+
+.content::after {
+    content: '';
+    display: block;
+    clear: both;
+}
 
 /* ---------------------------------------- Footer */
 
@@ -37,4 +196,12 @@ body {
     width: 100%;
     border-top: 1px solid #6A5455;
     height: 120px;
+    padding-top: 16px;
 }
+
+.footer a {
+    color: #fff3cb;
+    vertical-align: 40px;
+    margin-left: 5px;
+}
+
