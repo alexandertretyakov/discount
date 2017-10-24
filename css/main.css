@@ -67,6 +67,16 @@ button {
     font-size: 15px;
 }
 
+.word {
+    font-size: 28px;
+}
+
+.businesses {
+    color: #decacb;
+    font: 12px Verdana, Arial, Helvetica, sans-serif;
+}
+
+
 /*----------------------------------------- Header */
 
 .header {
@@ -126,10 +136,6 @@ button {
     padding: 20px 0 24px 105px;
     font-size: 14px;
     margin: 0 0 28px -120px;
-}
-
-.module--label span {
-    font-size: 28px;
 }
 
 /*--------------- Module: Address */
@@ -193,27 +199,39 @@ button {
     color: white;
     font: 14px Verdana, Arial, Helvetica, sans-serif;
     margin-bottom: 15px;
+    float: left;
 }
 
-.module--links h6 a {
-    float: right;
-    color: #decacb;
-    font: 12px Verdana, Arial, Helvetica, sans-serif;
-}
-
-.ololo::after {
+.partners::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.ololo img {
+.partners img {
     border: 10px solid #3c312f;
 }
 
-.ololo a {
+.partners a {
     float: left;
     margin: 0 10px 10px 0;
+}
+
+/*-------------------- Module: For-entrepreneurs */
+
+.module--for-entrepreneurs p {
+    margin-bottom: 25px;
+    line-height: 170%;
+}
+
+.module--for-entrepreneurs ol {
+    line-height: 170%;
+}
+
+/*-------------------- Module: Contacts */
+
+.module--contacts p {
+    line-height: 170%;
 }
 
 /* ---------------------------------------- Footer */
