@@ -67,16 +67,6 @@ button {
     font-size: 15px;
 }
 
-.word {
-    font-size: 28px;
-}
-
-.businesses {
-    color: #decacb;
-    font: 12px Verdana, Arial, Helvetica, sans-serif;
-}
-
-
 /*----------------------------------------- Header */
 
 .header {
@@ -127,15 +117,19 @@ button {
     float: right;
 }
 
-/*--------------- Module: Label */
+/*--------------- Module: Slogan */
 
-.module--label {
+.module--slogan {
     width: 402px;
     background-color: #594546;
     border: 1px solid #7f5e60;
     padding: 20px 0 24px 105px;
     font-size: 14px;
     margin: 0 0 28px -120px;
+}
+
+.module--slogan .word {
+    font-size: 28px;
 }
 
 /*--------------- Module: Address */
@@ -162,24 +156,24 @@ button {
     margin-top: 20px;
 }
 
-/*----------------- Module: Input */
+/*----------------- Module: Join */
 
-.module--input {
+.module--join {
     text-align: right;
     margin-bottom: 23px;
 }
 
-.module--input::after {
+.module--join::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.module--input img {
+.module--join img {
     float: left;
 }
 
-.module--input button {
+.module--join button {
     margin-top: 20px;
 }
 
@@ -189,17 +183,22 @@ button {
     line-height: 170%;
 }
 
-.page--about-us .module--article p {
+.module--article p {
     padding-bottom: 25px;
 }
 
-/*------------------- Module: Links */
+/*------------------- Module: Participants */
 
-.module--links h6 {
-    color: white;
+.module--participants h6 {
+    color: #fff;
     font: 14px Verdana, Arial, Helvetica, sans-serif;
     margin-bottom: 15px;
-    float: left;
+}
+
+.module--participants .full-list {
+    color: #decacb;
+    font: 12px Verdana, Arial, Helvetica, sans-serif;
+    float: right;
 }
 
 .partners::after {
@@ -215,23 +214,6 @@ button {
 .partners a {
     float: left;
     margin: 0 10px 10px 0;
-}
-
-/*-------------------- Module: For-entrepreneurs */
-
-.module--for-entrepreneurs p {
-    margin-bottom: 25px;
-    line-height: 170%;
-}
-
-.module--for-entrepreneurs ol {
-    line-height: 170%;
-}
-
-/*-------------------- Module: Contacts */
-
-.module--contacts p {
-    line-height: 170%;
 }
 
 /* ---------------------------------------- Footer */
